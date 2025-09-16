@@ -68,51 +68,69 @@ export default function About() {
           />
         </div>
 
-        {/* Extra Info - 2x2 Grid */}
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-          <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
-              🌐 Multilingual Text Datasets
-            </h3>
-            <p className="text-gray-600">
-              Represented with icons of a globe, text, and chat bubbles. Suggests
-              that we provide or create datasets in multiple languages for global
-              NLP applications.
-            </p>
-          </div>
+        {/* Static Image below everything */}
+<div className="mt-20">
+  {/* Centered Image */}
+  <div className="flex justify-center">
+    <img
+      src="/img.png"
+      alt="about company"
+      className="rounded-lg shadow-md max-h-[400px] object-contain"
+    />
+  </div>
 
-          <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
-              📚 Domain-Specific Knowledge Corpora
-            </h3>
-            <p className="text-gray-600">
-              Illustrated with a book, brain, and magnifying glass — showing that
-              we curate specialized datasets tailored to specific industries.
-            </p>
-          </div>
+  {/* Content Below Image */}
+  <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-5xl mx-auto text-gray-700">
+    {/* Block 1 */}
+    <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+      <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
+        🌍 Multilingual Text Datasets
+      </h3>
+      <p>
+        Represented with icons of a globe, text, and chat bubbles. Suggests that
+        they provide or create datasets in multiple languages for global NLP
+        (Natural Language Processing) applications.
+      </p>
+    </div>
 
-          <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
-              📝 Annotated Data for NLP & Vision
-            </h3>
-            <p className="text-gray-600">
-              Icons include a camera, annotation symbols, and checkmarks —
-              highlighting our expertise in producing labeled datasets for AI,
-              covering both natural language processing and computer vision.
-            </p>
-          </div>
+    {/* Block 2 */}
+    <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+      <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
+        📚 Domain-Specific Knowledge Corpora
+      </h3>
+      <p>
+        Illustrated with icons of a book, brain, and magnifying glass. Indicates
+        that they curate or develop specialized knowledge datasets tailored to
+        specific industries or domains.
+      </p>
+    </div>
 
-          <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-            <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
-              ⚙️ High-Quality Data Pipelines
-            </h3>
-            <p className="text-gray-600">
-              Depicted with gears, cloud storage, and flow diagrams. We build
-              efficient and reliable pipelines for managing and delivering data at
-              scale.
-            </p>
-          </div>
-        </div>
+    {/* Block 3 */}
+    <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+      <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
+        📷 Annotated Data for NLP & Vision
+      </h3>
+      <p>
+        Icons include a camera, text annotation symbols, and checkmarks.
+        Highlights their capability in producing labeled datasets for AI
+        training, covering both natural language processing and computer vision.
+      </p>
+    </div>
+
+    {/* Block 4 */}
+    <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+      <h3 className="font-semibold text-lg text-[#0d47a1] mb-2">
+        ⚙️ High-Quality Data Pipelines
+      </h3>
+      <p>
+        Depicted with gears, cloud storage, and flow diagrams. Refers to building
+        efficient and reliable data pipelines for processing, managing, and
+        delivering data at scale.
+      </p>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );
